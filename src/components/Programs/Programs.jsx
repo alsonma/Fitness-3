@@ -48,8 +48,8 @@ function Program() {
               </div>
 
               <div className="single-program-item color-3">
-                <img src="/images/icon-4.png" alt="Yoga" />
-                <h5>Yoga</h5>
+                <img src="/images/icon-4.png" alt="Cardio" />
+                <h5>Cardio</h5>
                 <p>
                   We have a wide choice of classes that are a great complement
                   to any training programme.

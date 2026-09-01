@@ -1,66 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
-return ( <header className="header-section"> <div className="header-container">
-    
-    <div className="logo">
-      <a href="/">
-        <img src="/images/fitness3.jpg" alt="FITNESS 3" />
-      </a>
-    </div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    {/* Navigation */}
-    <div className="nav-menu">
-      <nav className="mainmenu">
-        <ul>
-          <li className="active">
-            <a href="/">Home</a>
-          </li>
+  return (
+    <header className="header-section">
+      <div className="header-container">
 
-          <li>
-            <a href="/about">About</a>
-          </li>
+        {/* Logo */}
+        <div className="logo">
+          <a href="/">
+            <img src="/images/fitness3.jpg" alt="FITNESS 3" />
+          </a>
+        </div>
 
-          <li>
-            <a href="/schedule">Schedule</a>
-          </li>
+        {/* Navigation */}
+        <div className="nav-menu">
 
-          <li>
-            <a href="/gallery">Portfolio</a>
-          </li>
+          {/* Mobile Menu Button */}
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
 
-          <li className="dropdown-menu">
-            <a href="/blog">Blog</a>
+          <nav className={`mainmenu ${menuOpen ? "mobile-open" : ""}`}>
+            <ul>
 
-            <ul className="dropdown">
-              <li>
-                <a href="/blog-details">Blog Details</a>
+              <li className="active">
+                <a href="/">Home</a>
               </li>
+
+              <li>
+                <a href="/membership">Membership</a>
+              </li>
+
+              <li>
+                <a href="/gallery">Classes</a>
+              </li>
+
+              <li className="dropdown-menu">
+                <a href="/classes">Classes</a>
+
+                <ul className="dropdown">
+                  <li>
+                    <a href="/trainer-details">Trainer Details</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/contact">Contacts</a>
+              </li>
+              <li>
+                <a href="/login">Login</a>
+              </li>
+
             </ul>
-          </li>
+          </nav>
 
-          <li>
-            <a href="/contact">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+        </div>
 
-      {/* Search */}
-      <div className="nav-right">
-        <button className="search-btn" type="button">
-          🔍
-        </button>
       </div>
-    </div>
-
-    {/* Mobile Menu */}
-    <div id="mobile-menu-wrap"></div>
-
-  </div>
-</header>
-
-);
+    </header>
+  );
 };
 
 export default Header;
