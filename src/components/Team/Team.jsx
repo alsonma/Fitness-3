@@ -4,7 +4,7 @@ import "./Team.css";
 function Team() {
   const trainers = [
     {
-      image: "./src/assets/trainer-1.jpg",
+      image: "../../assets/trainer-1.jpg",
       specialization: "Gymer",
       name: "Martin Alex",
       description:
