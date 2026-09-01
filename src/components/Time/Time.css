@@ -1,0 +1,224 @@
+
+
+.trainer-schedule {
+  width: 100%;
+  padding: 100px 0;
+  background-color: rgb(207, 206, 206);
+}
+
+.trainer-container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Section Title
+========================= */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: #aaa;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* =========================
+   Schedule Table
+========================= */
+
+.schedule-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.schedule-table table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Table Header */
+
+.schedule-table thead th {
+  height: 70px;
+  padding: 15px 10px;
+  background-color: #222;
+  color: #ffffff;
+  border: 1px solid #333;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Time Column */
+
+.schedule-table thead th:first-child {
+  width: 80px;
+}
+
+.workout-time {
+  width: 80px;
+  background-color: #222;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #333;
+}
+
+/* Table Cells */
+
+.schedule-table td {
+  height: 130px;
+  padding: 15px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #333;
+  background-color: #181818;
+  color: #ffffff;
+}
+
+/* =========================
+   Workout Types
+========================= */
+
+.schedule-table td.gym {
+  background-color: #e63946;
+}
+
+.schedule-table td.yoga {
+  background-color: #6c63ff;
+}
+
+.schedule-table td.body {
+  background-color: #f39c12;
+}
+
+.schedule-table td.cardio {
+  background-color: #16a085;
+}
+
+.schedule-table td.running {
+  background-color: #3498db;
+}
+
+.schedule-table td.box {
+  background-color: #8e44ad;
+}
+
+.schedule-table td.crossfit {
+  background-color: #d35400;
+}
+
+/* =========================
+   Workout Content
+========================= */
+
+.schedule-table td h6 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.schedule-table td span {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.trainer-name {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* =========================
+   Hover Effect
+========================= */
+
+.schedule-table td.gym,
+.schedule-table td.yoga,
+.schedule-table td.body,
+.schedule-table td.cardio,
+.schedule-table td.running,
+.schedule-table td.box,
+.schedule-table td.crossfit {
+  transition: 0.3s ease;
+}
+
+.schedule-table td.gym:hover,
+.schedule-table td.yoga:hover,
+.schedule-table td.body:hover,
+.schedule-table td.cardio:hover,
+.schedule-table td.running:hover,
+.schedule-table td.box:hover,
+.schedule-table td.crossfit:hover {
+  transform: scale(1.02);
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+  .trainer-schedule {
+    padding: 70px 0;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .schedule-table {
+    overflow-x: auto;
+  }
+
+  .schedule-table table {
+    min-width: 950px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+  .trainer-schedule {
+    padding: 60px 0;
+  }
+
+  .trainer-container {
+    width: 92%;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .schedule-table table {
+    min-width: 900px;
+  }
+}
+

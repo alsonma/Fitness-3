@@ -1,0 +1,313 @@
+
+
+.class-section {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+
+.class-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Header
+========================= */
+
+.class-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  max-width: 600px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  color: #222;
+}
+
+.section-title p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+  margin: 0;
+}
+
+/* =========================
+   View All Button
+========================= */
+
+.primary-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.primary-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* =========================
+   Main Class
+========================= */
+
+.class-item {
+  width: 100%;
+  background-color: #fff;
+}
+
+.class-main {
+  display: flex;
+  align-items: stretch;
+  min-height: 450px;
+}
+
+/* Image */
+
+.class-image {
+  width: 55%;
+}
+
+.class-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text */
+
+.class-text {
+  width: 45%;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.class-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.class-text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Schedule Button
+========================= */
+
+.schedule-btn {
+  width: fit-content;
+  color: #e63946;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.schedule-btn span {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.schedule-btn:hover {
+  color: #222;
+}
+
+/* =========================
+   Class Navigation
+========================= */
+
+.class-author {
+  margin-top: 40px;
+}
+
+.class-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.class-nav-item {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.author-text {
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.author-text img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.author-text h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  transition: 0.3s ease;
+}
+
+/* Active Tab */
+
+.class-nav-item.active .author-text {
+  transform: translateY(-5px);
+}
+
+.class-nav-item.active .author-text h5 {
+  color: #e63946;
+}
+
+.class-nav-item.active .author-text img {
+  border: 3px solid #e63946;
+}
+
+/* Hover */
+
+.class-nav-item:hover .author-text {
+  transform: translateY(-5px);
+}
+
+.class-nav-item:hover h5 {
+  color: #e63946;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+
+  .class-header {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .class-main {
+    min-height: 400px;
+  }
+
+  .class-image img {
+    min-height: 400px;
+  }
+
+  .class-text {
+    padding: 40px 30px;
+  }
+
+  .class-text h3 {
+    font-size: 27px;
+  }
+
+  .class-nav {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  .class-section {
+    padding: 70px 0;
+  }
+
+  .class-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .class-main {
+    flex-direction: column;
+  }
+
+  .class-image,
+  .class-text {
+    width: 100%;
+  }
+
+  .class-image img {
+    height: 350px;
+    min-height: 350px;
+  }
+
+  .class-text {
+    padding: 40px 25px;
+  }
+
+  .class-text h3 {
+    font-size: 26px;
+  }
+
+  .class-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .author-text img {
+    height: 140px;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .class-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .author-text img {
+    height: 180px;
+  }
+
+  .primary-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+

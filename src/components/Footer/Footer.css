@@ -1,0 +1,367 @@
+/* =========================
+Footer
+========================= */
+
+.footer-section {
+width: 100%;
+background: #111111;
+color: #ffffff;
+}
+
+/* =========================
+Footer Top
+========================= */
+
+.footer-top {
+display: flex;
+width: 100%;
+}
+
+/* =========================
+Map
+========================= */
+
+.map-location {
+width: 50%;
+position: relative;
+min-height: 500px;
+}
+
+.map-location iframe {
+width: 100%;
+height: 500px;
+border: 0;
+display: block;
+}
+
+/* =========================
+Map Information
+========================= */
+
+.map-widget {
+position: absolute;
+left: 50%;
+top: 50%;
+
+transform: translate(-50%, -50%);
+
+background: #ffffff;
+color: #333333;
+
+padding: 25px 30px;
+
+min-width: 300px;
+
+display: flex;
+align-items: center;
+
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.map-icon {
+font-size: 28px;
+margin-right: 15px;
+}
+
+.map-address {
+flex: 1;
+}
+
+.map-text {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.map-text li {
+font-size: 14px;
+line-height: 28px;
+}
+
+.map-text span {
+font-weight: 600;
+margin-right: 5px;
+}
+
+/* =========================
+Callback Form
+========================= */
+
+.footer-form {
+width: 50%;
+min-height: 500px;
+
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.75),
+rgba(0, 0, 0, 0.75)
+),
+url("/img/contact-form-bg.jpg");
+
+background-size: cover;
+background-position: center;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+padding: 50px;
+box-sizing: border-box;
+}
+
+.form-content {
+width: 80%;
+max-width: 600px;
+}
+
+/* =========================
+Section Title
+========================= */
+
+.section-title h2 {
+font-family: "Oswald", sans-serif;
+font-size: 32px;
+
+margin-bottom: 15px;
+
+color: #ffffff;
+text-transform: uppercase;
+}
+
+.section-title p {
+color: #cccccc;
+
+font-size: 14px;
+line-height: 24px;
+
+margin-bottom: 30px;
+}
+
+/* =========================
+Form
+========================= */
+
+.form-row {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.form-half {
+width: calc(50% - 8px);
+}
+
+.form-full {
+width: 100%;
+}
+
+.footer-form input,
+.footer-form textarea {
+width: 100%;
+
+background: transparent;
+
+border: 1px solid #555555;
+
+outline: none;
+
+color: #ffffff;
+
+padding: 13px 15px;
+
+margin-bottom: 15px;
+
+font-size: 14px;
+
+box-sizing: border-box;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
+color: #aaaaaa;
+}
+
+.footer-form textarea {
+height: 120px;
+resize: none;
+}
+
+/* =========================
+Submit Button
+========================= */
+
+.footer-form button {
+border: none;
+
+background: #f15b2a;
+
+color: #ffffff;
+
+padding: 13px 25px;
+
+font-size: 14px;
+font-weight: 600;
+
+cursor: pointer;
+
+transition: 0.3s;
+}
+
+.footer-form button:hover {
+background: #ffffff;
+color: #f15b2a;
+}
+
+.footer-form button span {
+font-size: 20px;
+margin-left: 8px;
+}
+
+/* =========================
+Footer Bottom
+========================= */
+
+.footer-bottom {
+background: #0a0a0a;
+
+padding: 25px 0;
+}
+
+.footer-container {
+width: 1170px;
+max-width: 90%;
+
+margin: 0 auto;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* =========================
+Copyright
+========================= */
+
+.copyright {
+color: #888888;
+font-size: 13px;
+}
+
+.copyright span {
+color: #555555;
+}
+
+/* =========================
+Footer Widget
+========================= */
+
+.footer-widget ul {
+display: flex;
+
+list-style: none;
+
+margin: 0;
+padding: 0;
+
+gap: 25px;
+}
+
+.footer-widget li {
+color: #888888;
+
+font-size: 13px;
+
+cursor: pointer;
+
+transition: 0.3s;
+}
+
+.footer-widget li:hover {
+color: #f15b2a;
+}
+
+/* =========================
+Social Links
+========================= */
+
+.footer-links {
+display: flex;
+gap: 10px;
+}
+
+.footer-links a {
+width: 35px;
+height: 35px;
+
+border: 1px solid #444444;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #ffffff;
+
+text-decoration: none;
+
+font-weight: bold;
+
+transition: 0.3s;
+}
+
+.footer-links a:hover {
+background: #f15b2a;
+border-color: #f15b2a;
+}
+
+/* =========================
+Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+.footer-top {
+flex-direction: column;
+}
+
+.map-location,
+.footer-form {
+width: 100%;
+}
+
+.footer-container {
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+}
+
+@media (max-width: 576px) {
+
+.map-location,
+.map-location iframe {
+min-height: 400px;
+height: 400px;
+}
+
+.map-widget {
+min-width: 250px;
+padding: 20px;
+}
+
+.footer-form {
+padding: 40px 20px;
+}
+
+.form-content {
+width: 100%;
+}
+
+.form-half {
+width: 100%;
+}
+
+.footer-widget ul {
+flex-direction: column;
+gap: 10px;
+}
+}

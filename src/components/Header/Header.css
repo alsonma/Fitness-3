@@ -1,0 +1,240 @@
+/* =========================
+Header
+========================= */
+
+.header-section {
+width: 100%;
+background: #282828;
+position: relative;
+z-index: 100;
+}
+
+.header-container {
+width: 1170px;
+max-width: 100%;
+margin: 0 auto;
+padding: 0 15px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+min-height: 100px;
+}
+
+/* =========================
+Logo
+========================= */
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo a {
+display: block;
+}
+
+.logo img {
+max-width: 50%;
+height: auto;
+display: block;
+
+}
+
+/* =========================
+Navigation
+========================= */
+
+.nav-menu {
+display: flex;
+align-items: center;
+}
+
+.mainmenu > ul {
+display: flex;
+align-items: center;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.mainmenu > ul > li {
+position: relative;
+margin-left: 35px;
+}
+
+.mainmenu > ul > li > a {
+display: block;
+
+color: #ffffff;
+text-decoration: none;
+
+font-family: "Oswald", sans-serif;
+font-size: 14px;
+font-weight: 500;
+
+text-transform: uppercase;
+
+padding: 10px 0;
+
+transition: 0.3s;
+}
+
+.mainmenu > ul > li > a:hover {
+color: #f15b2a;
+}
+
+/* =========================
+Active Menu
+========================= */
+
+.mainmenu > ul > li.active > a {
+color: #f15b2a;
+}
+
+/* =========================
+Blog Dropdown
+========================= */
+
+.dropdown-menu .dropdown {
+position: absolute;
+
+top: 100%;
+left: 0;
+
+min-width: 180px;
+
+background: #ffffff;
+
+padding: 10px 0;
+
+margin: 0;
+
+list-style: none;
+
+opacity: 0;
+visibility: hidden;
+
+transform: translateY(10px);
+
+transition: 0.3s;
+
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu:hover .dropdown {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+
+.dropdown li {
+margin: 0;
+}
+
+.dropdown li a {
+display: block;
+
+padding: 10px 20px;
+
+color: #333333;
+
+text-decoration: none;
+
+font-family: "Roboto", sans-serif;
+font-size: 14px;
+
+transition: 0.3s;
+}
+
+.dropdown li a:hover {
+color: #f15b2a;
+background: #f5f5f5;
+}
+
+/* =========================
+Search
+========================= */
+
+.nav-right {
+margin-left: 35px;
+display: flex;
+align-items: center;
+}
+
+.search-btn {
+border: none;
+outline: none;
+
+background: transparent;
+
+color: #ffffff;
+
+font-size: 18px;
+
+cursor: pointer;
+
+padding: 5px;
+
+transition: 0.3s;
+}
+
+.search-btn:hover {
+color: #f15b2a;
+}
+
+/* =========================
+Mobile Menu
+========================= */
+
+#mobile-menu-wrap {
+display: none;
+}
+
+/* =========================
+Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+.header-container {
+width: 100%;
+padding: 0 25px;
+}
+
+.mainmenu > ul > li {
+margin-left: 20px;
+}
+
+.mainmenu > ul > li > a {
+font-size: 13px;
+}
+
+.nav-right {
+margin-left: 20px;
+}
+}
+
+@media (max-width: 767px) {
+
+.header-container {
+min-height: 80px;
+}
+
+.mainmenu {
+display: none;
+}
+
+.nav-right {
+margin-left: auto;
+}
+
+#mobile-menu-wrap {
+display: block;
+}
+
+.logo img {
+max-width: 150px;
+}
+}
