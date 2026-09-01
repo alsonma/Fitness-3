@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.css";
+import fitnessLogo from '../../assets/fitness3.jpg';
 
 const Header = () => {
 return ( <header className="header-section"> <div className="header-container">
     
     <div className="logo">
       <a href="/">
-        <img src="/assets/fitness3.jpg" alt="FITNESS 3" />
+        <img src={fitnessLogo} alt="FITNESS 3" />
       </a>
     </div>
 
