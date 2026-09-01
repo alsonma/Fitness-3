@@ -26,7 +26,7 @@ function Hero() {
 
       <div className="hero-image">
         <img
-          src="./src/assets/gallery-1.jpg"
+          src="/images/gallery-1.jpg"
           alt="Gym Workout"
         />
       </div>

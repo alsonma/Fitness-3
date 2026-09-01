@@ -8,43 +8,43 @@ function Class() {
   const classes = [
     {
       title: "Body Building",
-      image: "./src/assets/class-1.jpg",
-      authorImage: "./src/assets/author-1.jpg",
+      image: "/images/class-1.jpg",
+      authorImage: "/images/author-1.jpg",
       description:
         "Body Building is designed to sculpt, tone and strengthen your entire body. Focusing on weight training and high repetition movements, you'll build strength, burn calories and develop lean muscle conditioning.",
     },
     {
       title: "Racing Running",
-      image: "./src/assets/class-2.jpg",
-      authorImage: "./src/assets/author-2.jpg",
+      image: "/images/class-2.jpg",
+      authorImage: "/images/author-2.jpg",
       description:
         "Improve your speed, stamina and endurance with our racing and running sessions. These workouts are designed to improve cardiovascular fitness and help you reach your performance goals.",
     },
     {
       title: "Yoga Fitness",
-      image: "./src/assets/class-3.jpg",
-      authorImage: "./src/assets/author-3.jpg",
+      image: "/images/class-3.jpg",
+      authorImage: "/images/author-3.jpg",
       description:
         "Yoga Fitness combines strength, flexibility and controlled breathing. Improve your balance, mobility and mental focus through carefully designed yoga sessions.",
     },
     {
       title: "Kick Boxing",
-      image: "./src/assets/class-4.jpg",
-      authorImage: "./src/assets/author-4.jpg",
+      image: "/images/class-4.jpg",
+      authorImage: "/images/author-4.jpg",
       description:
         "Kick boxing is an energetic full-body workout that improves strength, coordination, speed and endurance while helping you stay active and confident.",
     },
     {
       title: "Cardio Workout",
-      image: "./src/assets/class-5.jpg",
-      authorImage: "./src/assets/author-5.jpg",
+      image: "/images/class-5.jpg",
+      authorImage: "/images/author-5.jpg",
       description:
         "Our cardio workouts are designed to improve heart health, stamina and overall fitness. Enjoy dynamic exercises that keep you moving and energized.",
     },
     {
       title: "Martial Arts",
-      image: "./src/assets/class-6.jpg",
-      authorImage: "./src/assets/author-6.jpg",
+      image: "/images/class-6.jpg",
+      authorImage: "/images/author-6.jpg",
       description:
         "Learn martial arts techniques while improving strength, balance, flexibility and discipline. Our sessions are suitable for different fitness levels.",
     },

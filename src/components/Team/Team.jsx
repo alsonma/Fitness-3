@@ -11,21 +11,21 @@ function Team() {
         "Body Building, the original LES MILLS barbell class, will sculpt, tone and strengthen your entire body, fast!",
     },
     {
-      image: "./src/assets/trainer-2.jpg",
+      image: "/images/trainer-2.jpg",
       specialization: "Body Building",
       name: "Martin Alex",
       description:
         "Body Building, the original LES MILLS barbell class, will sculpt, tone and strengthen your entire body, fast!",
     },
     {
-      image: "./src/assets/trainer-3.jpg",
+      image: "/images/trainer-3.jpg",
       specialization: "Yoga",
       name: "Martin Alex",
       description:
         "Body Building, the original LES MILLS barbell class, will sculpt, tone and strengthen your entire body, fast!",
     },
     {
-      image: "./src/assets/trainer-3.jpg",
+      image: "/images/trainer-3.jpg",
       specialization: "Cardio",
       name: "Martin Alex",
       description:

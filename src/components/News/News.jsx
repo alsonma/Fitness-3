@@ -5,19 +5,19 @@ import "./News.css";
 function News() {
   const news = [
     {
-      image: "./src/assets/latest-1.jpg",
+      image: "/images/latest-1.jpg",
       date: "Dec 11, 2026",
       comments: "6 Comments",
       title: "5 Essential Exercises for Building Stronger Muscles",
     },
     {
-      image: "./src/assets/latest-2.jpg",
+      image: "/images/latest-2.jpg",
       date: "Dec 19, 2026",
       comments: "6 Comments",
       title: "Everything You Need to Know Before Your First Gym Workout",
     },
     {
-      image: "./src/assets/latest-3.jpg",
+      image: "/images/latest-3.jpg",
       date: "Dec 23, 2026",
       comments: "6 Comments",
       title: "5 Tips to Improve Your Fitness and Reach Your Goals",

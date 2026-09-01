@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import gymImage from '../../assets/class-1.jpg'
 
 export default function About() {
   return (
@@ -9,7 +8,7 @@ export default function About() {
 
         <div className="about-image">
           <img
-            src={gymImage}
+            src="/images/author-3.jpg"
             alt="Gym training"
           />
         </div>

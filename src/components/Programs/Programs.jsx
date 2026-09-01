@@ -21,7 +21,7 @@ function Program() {
             <div className="program-items">
 
               <div className="single-program-item">
-                <img src="./src/assets/icon-1.png" alt="Weight Lifting" />
+                <img src="/images/icon-1.png" alt="Weight Lifting" />
                 <h5>Weight Lifting</h5>
                 <p>
                   We have a wide choice of classes that are a great complement
@@ -30,7 +30,7 @@ function Program() {
               </div>
 
               <div className="single-program-item color-1">
-                <img src="./src/assets/icon-2.png" alt="Body Building" />
+                <img src="/images/icon-2.png" alt="Body Building" />
                 <h5>Body Building</h5>
                 <p>
                   We have a wide choice of classes that are a great complement
@@ -39,7 +39,7 @@ function Program() {
               </div>
 
               <div className="single-program-item color-2">
-                <img src="./src/assets/icon-3.png" alt="Healthy" />
+                <img src="/images/icon-3.png" alt="Healthy" />
                 <h5>Healthy</h5>
                 <p>
                   We have a wide choice of classes that are a great complement
@@ -48,7 +48,7 @@ function Program() {
               </div>
 
               <div className="single-program-item color-3">
-                <img src="./src/assets/icon-4.png" alt="Yoga" />
+                <img src="/images/icon-4.png" alt="Yoga" />
                 <h5>Yoga</h5>
                 <p>
                   We have a wide choice of classes that are a great complement
@@ -63,7 +63,7 @@ function Program() {
           <div className="program-video-container">
             <div className="program-video">
               <img
-                src="./src/assets//video-bg.jpg"
+                src="/images/video-bg.jpg"
                 alt="Gym Training"
               />
 
